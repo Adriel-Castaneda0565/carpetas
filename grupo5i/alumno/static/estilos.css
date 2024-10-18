@@ -5,3 +5,7 @@ h1{
     color:black;
     font-size:100px;
 }
+h1:hover{
+    color:rgb(140, 107, 217);
+    scale:0.4;
+}
