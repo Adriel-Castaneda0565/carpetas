@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+
+
+{% block cuerpo %}
+  <div class="row"><!--LA FILA-->
+   <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"> <!--columna izquierda-->
+
+     <h1>Agregar</h1>
+     <div class="card"><!--la tarjeta-->
+      <div class="card-body">
+        <form action="registrarProductos/" method="POST">{% csrf_token %}<!--falta action-->
+          <div class="form-group py-2">
+            <input type="text" id="txtid" name="txtid" class="form-control"
+            placeholder="ID_Productos" minlength="1"  maxlength="6" required>
+          </div>
+          <div class="form-group py-2">
+            <input type="text" id="txtnombre" name="txtnombre" class="form-control"
+            placeholder="Nombre Producto" minlength="1"  maxlength="100" required>
+          </div>
+          <div class="form-group py-2">
+            <input type="text" id="txttipo" name="txttipo" class="form-control"
+            placeholder="Tipo" minlength="1" maxlength="100"  equired>
+          </div>
+          <div class="form-group py-2">
+            <input type="text" id="txtpro" name="txtpro" class="form-control"
+            placeholder="ID_Proveedor" minlength="1" maxlength="100"  equired>
+          </div>
+          <div class="form-group py-2">
+            <input type="text" id="txtcant" name="txtcant" class="form-control"
+            placeholder="Cantidad" minlength="1" maxlength="100"  equired>
+          </div>
+          <div class="form-group py-2">
+            <input type="text" id="txtpre" name="txtpre" class="form-control"
+            placeholder="Precio" minlength="1" maxlength="100"  equired>
+          </div>
+          <div class="form-group py-2">
+            <input type="text" id="txtdesc" name="txtdesc" class="form-control"
+            placeholder="Descripcion" minlength="1" maxlength="100"  equired>
+          </div>
+          <div class="form-group py-2">
+            <input type="text" id="txtsuc" name="txtsuc" class="form-control"
+            placeholder="ID_sucursal" minlength="1" maxlength="100"  equired>
+          </div>
+          <div class="form-group py-2">
+            <button type="submit" class="btn btn-primary">Guardar Producto</button>
+          </div>
+
+        </form>
+      </div>
+    </div><!--la tarjeta-->
+   </div><!--columna izquierda-->
+
+ 
+
+  <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8"> <!--columna derecha-->
+    <h1>Listado de Productos</h1>
+    <!--la tabla-->
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">ID_Prov</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">ID_sucursal</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for m in misproductos %}
+          <tr>
+            <td> {{forloop.counter}} </td>
+            <td> {{m.id_prod}} </td>
+            <td> {{m.nombre}} </td>
+            <td> {{m.tipo}} </td>
+            <td> {{m.id_prov}} </td>
+            <td> {{m.cant}} </td>
+            <td> {{m.precio}} </td>
+            <td> {{m.desc}} </td>
+            <td> {{m.id_suc}} </td>
+
+            <td><a href="seleccionarProductos/{{m.id_prod}}" class="btn btn-info">Editar</a></td><!--Falta-->
+            <td><a href="borrarProductos/{{m.id_prod}}" class="btn btn-danger">Borrar</a></td><!--Falta-->
+          </tr>
+          
+
+          {% endfor %}
+        </tbody>
+      </table>
+    <!--la tabla-->
+  </div><!--columna derecha-->
+</div><!--LA FILA-->
+{% endblock %}
