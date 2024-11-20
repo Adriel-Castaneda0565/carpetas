@@ -1,0 +1,241 @@
+.color1 {color: #120907;}
+.color2 {color: #12203a;}
+.color3 {color: #155d8f;}
+.color4 {color: #2099d8;}
+.color5 {color: #20d2d8;}
+
+<div class="productos">
+        <?php
+        include("db.php");
+        $sql=$conn->query("SELECT *FROM productos WHERE id='28'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        
+        $sql=$conn->query("SELECT *FROM productos WHERE id='18'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='1'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='4'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='35'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        
+        $sql=$conn->query("SELECT *FROM productos WHERE id='7'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='11'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='22'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        
+        include("db.php");
+        $sql=$conn->query("SELECT *FROM productos WHERE id='21'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        
+        $sql=$conn->query("SELECT *FROM productos WHERE id='6'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='9'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='14'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='50'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        
+        $sql=$conn->query("SELECT *FROM productos WHERE id='17'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='12'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        $sql=$conn->query("SELECT *FROM productos WHERE id='32'");
+        while($datos=$sql->fetch_object()){?>
+        
+            <div class="ss">
+        <div class="nombre-p"><?=htmlspecialchars($datos->nombre)?></div>
+        <img src="<?=htmlspecialchars($datos->imagen)?>" alt="" class="imagen-p" width="100px">
+        <div class="desc"><?=htmlspecialchars($datos->descripcion)?></div>
+        <div class="precio-p">$<?=htmlspecialchars($datos->precio)?></div><br>
+        <div class="id-p">$<?=htmlspecialchars($datos->id)?></div><br>
+        <a class="boton-cart" href='carrito.php?id=<?=htmlspecialchars($datos->id)?>'>Agregar a carrito</a>
+        </div>
+        
+        <?php   
+        }
+        ?>
+    </div>
